@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basketball score </title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/digital-numbers" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/digital-numbers');
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="dashboard">
+        <div>
+            <h1>HOME</h1>
+            <div id="homeScore-el" class="score"></div>
+            <div class="increment">
+                <div onclick="addHome(1)" class="increment-box">+1</div>
+                <div onclick="addHome(2)" class="increment-box">+2</div>
+                <div onclick="addHome(3)" class="increment-box">+3</div>
+            </div>
+        </div>
+        <div>
+
+            <h1>GUEST</h1>
+            <div id="guestScore-el" class="score"></div>
+            <div class="increment">
+                <div onclick="addGuest(1)" class="increment-box">+1</div>
+                <div onclick="addGuest(2)" class="increment-box">+2</div>
+                <div onclick="addGuest(3)" class="increment-box">+3</div>
+            </div>
+
+
+        </div>
+
+        <div id="rbtn">
+            <button onclick="reset()" id="reset">Reset</button>
+
+        </div>
+        <script src="index.js"></script>
+
+    </div>
+
+
+
+</body>
+
+</html>
